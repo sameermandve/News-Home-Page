@@ -15,35 +15,56 @@
   <body>
     <section id="wrapper">
       <header>
-        <img src="assets/images/logo.svg" alt="logo" />
+        <img id="logo" src="assets/images/logo.svg" alt="logo" />
+        <img
+          class="hidden-menu"
+          id="icon-menu"
+          src="assets/images/icon-menu.svg"
+          alt="menu"
+        />
       </header>
 
       <nav>
-        <a href="zh">Home</a>
-        <a href="zn">New</a>
-        <a href="zp">Popular</a>
-        <a href="zt">Trending</a>
-        <a href="zc">Categories</a>
+        <div id="navbar">
+          <a href="zh">Home</a>
+          <a href="zn">New</a>
+          <a href="zp">Popular</a>
+          <a href="zt">Trending</a>
+          <a href="zc">Categories</a>
+        </div>
+        <img
+          class="hidden-close"
+          id="icon-menu-close"
+          src="assets/images/icon-menu-close.svg"
+        />
       </nav>
 
       <main>
         <img
-          id="main-img"
+          id="main-img-dsktop"
           src="assets/images/image-web-3-desktop.jpg"
           alt="image"
         />
 
-        <div id="main-heading">
-          <h1>The Bright Future of Web 3.0?</h1>
-        </div>
+        <img
+          id="main-img-mobile"
+          src="assets/images/image-web-3-mobile.jpg"
+          alt="image"
+        />
 
-        <div id="info-read-more">
-          <p>
-            We dive into the next evolution of the web that claims to put the
-            power of the platforms back into the hands of the people. But is it
-            really fulfilling its promise?
-          </p>
-          <button>Read More</button>
+        <div id="info-section">
+          <div id="main-heading">
+            <h1>The Bright Future of Web 3.0?</h1>
+          </div>
+
+          <div id="info-read-more">
+            <p>
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <button>READ MORE</button>
+          </div>
         </div>
       </main>
 
@@ -76,16 +97,18 @@
         <div class="posts" id="post-1">
           <img src="assets/images/image-retro-pcs.jpg" alt="retro-pcs" />
           <div class="posts-info">
-            <h4 class="posts-head-no">01</h4>
+            <h4>01</h4>
             <p class="posts-heading">Reviving Retro PCs</p>
-            <p>What happens when old PCs are given modern upgrades?</p>
+            <p class="posts-para">
+              What happens when old PCs are given modern upgrades?
+            </p>
           </div>
         </div>
 
         <div class="posts" id="post-2">
           <img src="assets/images/image-top-laptops.jpg" alt="top-laptops" />
           <div class="posts-info">
-            <h4 class="posts-head-no">02</h4>
+            <h4>02</h4>
             <p class="posts-heading">Top 10 Laptops of 2022</p>
             <p class="posts-para">
               Our best picks for various needs and budget.
@@ -99,7 +122,7 @@
             alt="gaming-growth"
           />
           <div class="posts-info">
-            <h4 class="posts-head-no">03</h4>
+            <h4>03</h4>
             <p class="posts-heading">The Growth of Gaming</p>
             <p class="posts-para">
               How the pandemic has sparked fresh opportunities.
